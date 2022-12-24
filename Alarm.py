@@ -1,5 +1,10 @@
 #KOMENTAR
- 
+from time import *
+result= localtime()
+print(result)
+
+
+
 def month_input(month):
     dicmonth={'january':31,
           'february':28,
@@ -41,6 +46,8 @@ def setDate():
     return "Its {}.{}.{}".format(dan,month,godina)
     
 print(setDate())
+
+
 
       
 #KOMENTAR 2
