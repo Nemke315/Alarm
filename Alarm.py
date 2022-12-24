@@ -1,8 +1,10 @@
 #KOMENTAR
-from time import *
-result= localtime()
-print(result)
+#time.clock_settime(clk_id, time: float)
+#Set the time of the specified clock clk_id. Currently, CLOCK_REALTIME is the only accepted value for clk_id.
 
+from time import *
+result=strftime('%H:%M')
+print(result)
 
 
 def month_input(month):
@@ -43,7 +45,7 @@ def setDate():
     year= int(input("Enter a year"))
     godina=year_input(year)
     
-    return "Its {}.{}.{}".format(dan,month,godina)
+    return "Its {}.{}.{}.{}".format(dan,month,godina,result)
     
 print(setDate())
 
